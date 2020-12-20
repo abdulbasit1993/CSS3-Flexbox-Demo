@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Flexbox Basics Training</title>
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section div {
+    /* width: 30%; */
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+section {
+    width: 100%;
+    background: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* align-items property works vertically */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+
+    /* justify-content property works horizontally */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; /* This is by default in display: flex property */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+.btn-div {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+}
+
+.btn-link:hover {
+    background-color: rgb(107, 62, 148);
+}
+
+.flexone {
+    /* flex: 1; */
+    background: red; 
+}
+
+.flextwo {
+    /* flex: 2; */
+    background: yellow;
+}
+
+.flexthree {
+    /* flex: 2; */
+    background: green;
+}
+</style>
+
+<body>
+
+    <section>
+        <div class="flexone">1 One - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae ad quidem amet temporibus! Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus</div>
+
+        <div class="flextwo">2 Two - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam architecto, dolorem officiis doloribus</div>
+
+        <div class="flexthree">3 Three - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quisquam iusto perferendis sed consequuntur Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus Quam architecto, dolorem officiis doloribus</div>
+    </section>
+
+    <div class="btn-div">
+        <a href="flex-wrap.html" class="btn-link">Click Here for flex-wrap Example</a>
+    </div>
+    
+</body>
+
+</html>
